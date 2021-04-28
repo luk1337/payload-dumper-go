@@ -116,7 +116,7 @@ jobs:
           tar -xvf xz-5.2.5.tar.gz
           pushd xz-5.2.5
           PATH=/osxcross/target/bin:$PATH ./autogen.sh
-          PATH=/osxcross/target/bin:$PATH ./configure --host=x86_64-apple-darwin15 --prefix=/darwin-amd64-buildroot/sys-root --enable-shared=no
+          PATH=/osxcross/target/bin:$PATH ./configure --host=x86_64-apple-darwin20 --prefix=/darwin-amd64-buildroot/sys-root --enable-shared=no
           PATH=/osxcross/target/bin:$PATH make -j$(nproc) install
           popd
           popd
